@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <!-- bymart.kelompok tree view -->
+    <record id="bymart_kelompok_view_tree" model="ir.ui.view">
+        <field name="name">bymart.kelompok.view.tree</field>
+        <field name="model">bymart.kelompok</field>
+        <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="kode_kategori"/>
+                <field name="kode_rak"/>
+                <field name="jml_item"/>
+                <field name="daftar"/>
+            </tree>
+        </field>
+    </record>
+
+    <!-- bymart.kelompok form view -->
+    <record id="bymart_kelompok_view_form" model="ir.ui.view">
+        <field name="name">bymart.kelompok.view.form</field>
+        <field name="model">bymart.kelompok</field>
+        <field name="arch" type="xml">
+            <form string="Kelompok Barang">
+                <sheet>
+                    <group>
+                        <field name="name"/>
+                        <field name="kode_kategori"/>
+                        <field name="kode_rak"/>
+                        <field name="jml_item"/>
+                        <field name="barang_ids"/>
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- bymart.kelompok action window -->
+    <record id="bymart_kelompok_action" model="ir.actions.act_window">
+        <field name="name">Kelompok Barang</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">bymart.kelompok</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- This Menu Item must have a parent and an action -->
+    <menuitem id="bymart_kelompok_menu_act" 
+              name="Kelompok Barang" 
+              parent="bymart_barang_menu_categ" 
+              action="bymart_kelompok_action" 
+              sequence="10"/>
+
+</odoo>

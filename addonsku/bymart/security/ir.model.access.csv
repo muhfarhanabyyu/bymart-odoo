@@ -1,0 +1,7 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_bymart_kelompok,access.bymart.kelompok,model_bymart_kelompok,,1,1,1,1
+access_bymart_barang,access.bymart.barang,model_bymart_barang,,1,1,1,1
+access_bymart_person,access.bymart.person,model_bymart_person,,1,1,1,1
+access_bymart_kasir,access.bymart.kasir,model_bymart_kasir,,1,1,1,1
+access_bymart_cleaningservice,access.bymart.cleaningservice,model_bymart_cleaningservice,,1,1,1,1
+access_bymart_supplier,access.bymart.supplier,model_bymart_supplier,,1,1,1,1
